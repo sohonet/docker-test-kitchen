@@ -2,7 +2,7 @@ FROM          ubuntu:14.04
 MAINTAINER    johan.vandendorpe@sohonet.co.uk
 
 RUN apt-get update
-RUN apt-get install -y sudo openssh-server curl lsb-release wget
+RUN apt-get install -y sudo openssh-server curl lsb-release wget apt-transport-https
 RUN apt-get upgrade -y
 
 # Kitchen user
